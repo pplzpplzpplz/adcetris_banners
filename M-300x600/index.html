@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="ad.size" content="width=300,height=600">
+  <script type="text/javascript">
+    var clickTag = "https://www.pomalyst.com/multiple-myeloma-patient#Laurie";
+    var clickTag2 = "https://packageinserts.bms.com/pi/pi_pomalyst.pdf";
+    var clickTag3 = "https://media.pomalyst.com/wp-content/uploads/2020/01/POMALYST-Medication-Guide-1019.pdf";
+    var clickTag4 = "https://www.pomalyst.com/";
+    var clickTag5 = "https://www.bms.com/";
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ColorPropsPlugin.min.js"></script>
+  <style type="text/css">
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      padding: 0;
+    }
+
+    .container {
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      display: none;
+      z-index: 1;
+    }
+
+    .banner-content.banner-content--active {
+      opacity: 1;
+      display: block;
+    }
+
+    .b-300x600 {
+      width: 300px;
+      height: 600px;
+      padding: 0;
+    }
+
+    /*CTA BTN*/
+    .btn-container {
+      width: 300px;
+      height: 600px;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 100;
+      cursor: pointer;
+    }
+
+    img {
+      width: 300px;
+      height: 600px;
+    }
+
+    .cta-btn {
+      background-color: #fff;
+      opacity: 1;
+      width: 130px;
+      height: 35px;
+      border-radius: 6px;
+      top: 192px;
+      left: 85px;
+      position: absolute;
+      z-index: 0;
+    }
+
+    .cta-btn.hovered {
+      transform: scale(1.05);
+    }
+
+
+    .banner-border {
+      position: absolute;
+      width: 298px;
+      height: 598px;
+      border: 1px solid #535353;
+      pointer-events: none;
+      z-index: 6;
+      top: 0px;
+      left: 0px;
+    }
+
+    .exit {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+
+
+    .frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .frame--end {
+      opacity: 0;
+      z-index: 5;
+    }
+
+    .julie {
+      position: absolute;
+      left: -20;
+      bottom: 0;
+      width: 300px;
+      height: auto;
+      opacity: 0;
+    }
+
+    .wave {
+      width: 300px;
+      height: auto;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .wave--yellow {
+      width: 300;
+      position: absolute;
+      /* bottom: -183px; */
+      height: auto;
+      transform: translateY(183px);
+      right: 0;
+      top: 232px;
+    }
+
+    .wave--blue {
+      position: absolute;
+      width: 823px;
+      height: 692px;
+      background-color: #222D6E;
+      background: linear-gradient(0deg, #222D6E 0%, #222D6E 19%, #0185ac 100%);
+      border-radius: 100%;
+      bottom: -540px;
+      left: -310px;
+      transform: rotate(10deg) translateY(13%);
+    }
+
+    .headline {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      transform: translateY(-10px);
+      opacity: 0;
+      left: 0;
+      top: 0px;
+    }
+
+    .js-endframe-subheadline {
+      top: 200px;
+    }
+
+    .js-endframe-headline {
+      /* top: -85px; */
+    }
+
+    .js-headline-1 {
+      top: 0px;
+    }
+
+    .js-headline-2,
+    .js-headline-3 {
+      top: 0px;
+    }
+
+    .endframe-hero {
+      height: auto;
+      top: 1px;
+      position: absolute;
+      left: 0;
+    }
+
+    .logobar {
+      width: 100%;
+      height: 45px;
+      border-top: 4px solid #fcc427;
+      border-bottom: 4px solid #fcc427;
+      position: absolute;
+      top: 300px;
+      background-color: #fff;
+    }
+
+    .logobar-logo {
+      width: 85px;
+      height: auto;
+      position: absolute;
+      top: 2px;
+      left: 8px;
+    }
+
+    .bms-logo {
+      width: 100px;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+
+    #footer {
+      background-color: #1f7489;
+      height: 23px;
+      width: 300px;
+      z-index: 5566;
+      bottom: -3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      position: absolute;
+    }
+
+    #innerwrap td,
+    #innerwrap p,
+    #innerwrap ul li,
+    #innerwrap td strong {
+      color: #000;
+    }
+
+    #pi {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 8px;
+      top: 6px;
+      left: 10px;
+      position: absolute;
+
+    }
+
+    #pi a,
+    #mg a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #pi strong,
+    #mg strong {
+      text-decoration: underline;
+      line-height: 18px;
+    }
+
+    #mg {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      font-size: 8px;
+      top: 6px;
+      left: 190px;
+      position: absolute;
+    }
+
+    #scrollbarcon {
+      top: 2px !important
+    }
+
+
+    /* ////////////////// SCROLLER STYLES ///////////////////////  */
+
+    #scroll_container {
+
+      background: #fff;
+      z-index: 300;
+      opacity: 1;
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      right: 0;
+
+    }
+
+    .ssb_down {
+      width: 9px !important;
+      background-color: green;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .ssb_up {
+      width: 9px !important;
+      background-color: blue;
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .ssb_sb {
+      cursor: pointer;
+      position: absolute;
+      right: 7px;
+      min-height: 12px;
+      background: #1f7489;
+      border-radius: 50px;
+      width: 6px !important;
+    }
+
+
+
+    .ssb_st {
+      /* guia de cursor */
+      background: #dfe0e1;
+      cursor: pointer;
+      height: 94%;
+      position: absolute;
+      width: 6px !important;
+      right: 7px;
+      top: 0px;
+      border-radius: 50px;
+    }
+
+    #h2_fontSize {
+      font-size: 10px;
+      margin-top: 2px;
+    }
+
+    #innerwrap {
+      padding: 0px 34px 0 7px;
+    }
+
+
+    #innerwrap h2 {
+      font-size: 10px;
+      color: #025151;
+      margin-top: 2px;
+    }
+
+    table {
+      font-size: 10px;
+      color: #000;
+      padding-bottom: 4px;
+      letter-spacing: -0.1px;
+    }
+
+    td {
+      padding-bottom: 2px;
+    }
+
+    #innerwrap p,
+    #innerwrap ul li {
+      font-size: 10px;
+      color: #000;
+      padding-bottom: 2px;
+      letter-spacing: -0.1px;
+    }
+
+    #innerwrap td {
+      font-size: 10px;
+      color: #000;
+      letter-spacing: -0.1px;
+      line-height: 1;
+    }
+
+    #innerwrap ul li {
+      margin-left: 15px
+    }
+
+    #innerwrap p a {
+      color: #025151
+    }
+
+
+    #innerwrap li sup {
+      top: 1px;
+      font-size: 6px;
+      font-weight: 400;
+      padding-left: 0px;
+    }
+
+    #innerwrap p.copy {
+      font-size: 12px;
+      padding-bottom: 0
+    }
+
+    .right-pointing-triangle::after {
+      content: "\25B6 \FE0E";
+    }
+  </style>
+  <script src="script.js" type="text/javascript" charset="utf-8">
+  </script>
+
+<body>
+  <div id="container" class="container b-300x600" style="background-color: #1f7489;">
+    <div class="banner-border"></div>
+    <a class="exit js-exit" href="javascript:void(window.open(window.clickTag))"></a>
+    <div class="banner-content">
+      <div class="frame js-frame-1">
+        <!-- shapes -->
+        <img class="wave wave--yellow js-wave-yellow" src="./images/wave-yellow.png" alt="">
+        <span class="wave wave--blue js-wave-blue"></span>
+
+        <!-- julie -->
+        <img class="julie" src="./images/julie.png" alt="Julie">
+
+        <!-- frame headlines -->
+        <img class="headline js-headline-1" src="./images/F1-H.png" alt="">
+        <img class="headline js-headline-2" src="./images/F2-H.png" alt="">
+        <img class="headline js-headline-3" src="./images/F3-H.png" alt="">
+      </div>
+      <div class="frame frame--end js-endframe">
+        <img class="endframe-hero" src="./images/endframe-bg.jpg" alt="">
+        <img class="headline js-endframe-headline" src="./images/F4-H.png" alt="">
+        <img class="headline js-endframe-headline-2" src="./images/F5-H.png" alt="">
+        <div class="logobar">
+          <a href="javascript:void(window.open(window.clickTag4))"><img class="logobar-logo" src="./images/rev-logo.jpg"
+              alt=""></a>
+        </div>
+
+        <!-- ISI  -->
+        <div id="scroll_container" class="positionAb transis1">
+          <div id="main_content" class="scrollbarcon">
+            <div id="innerwrap">
+              <div id="h2_fontSize" style="color:#025151; margin-bottom: 10px; margin-top: 7px;">
+                <strong>Indication</strong>
+              </div>
+            <p style="margin-top: 0; margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non odio adipisci a eum itaque laudantium corporis quam saepe natus tempore at ipsum beatae autem, omnis dicta voluptates delectus qui. Accusantium ipsa voluptas ad rerum nisi ducimus eligendi tempora distinctio soluta, modi porro rem doloremque minus, exercitationem iure iste repudiandae culpa. Nihil facere possimus obcaecati ea, dolor dolorem facilis laboriosam. Nesciunt facere blanditiis sequi a quibusdam culpa, ullam deleniti ab necessitatibus beatae. Quis reprehenderit cupiditate, natus porro, soluta, culpa eos dignissimos necessitatibus consectetur harum explicabo. Placeat voluptatem excepturi nemo quam. <br><br>
+              
+              Saepe enim sed quos cumque vero adipisci? Incidunt, modi architecto harum est iure facilis amet laboriosam non unde totam vel esse, quaerat aut fugiat praesentium minima quae vero! Repellendus, quibusdam. <br><br>
+              
+              Modi temporibus quis repellendus pariatur quam, voluptates laborum soluta fuga nulla voluptas aut ut expedita perspiciatis neque aliquam tempore rem asperiores consectetur reiciendis consequuntur alias in suscipit praesentium beatae? Et! <br><br>
+              
+              Ipsa iure, ullam explicabo dolorem, temporibus molestias ratione cumque neque asperiores itaque mollitia, hic a sapiente voluptatum nemo expedita aut amet! Quidem minus nulla at voluptatum ad perspiciatis voluptatibus soluta. <br><br>
+              
+              Totam officia animi, sed explicabo alias, cupiditate id vel maxime quaerat tempora ab a ducimus reprehenderit ex eos. Consectetur alias aperiam odio! Ipsa explicabo praesentium consequatur aperiam dicta consectetur quod.Aliquam sed mollitia, explicabo aperiam aut facilis voluptate quis earum sit nobis distinctio delectus modi at molestiae repellat. Earum, ea eius sunt doloremque qui non blanditiis nulla. Itaque, debitis corporis. <br><br>
+              
+              Laudantium molestiae nihil recusandae temporibus inventore perferendis aut? Cum fugiat sapiente nemo, possimus asperiores necessitatibus esse, enim repellat cumque inventore minus tempore blanditiis ad delectus temporibus ab, nihil expedita provident.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
