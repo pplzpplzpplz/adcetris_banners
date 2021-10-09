@@ -52,6 +52,20 @@
       padding: 0;
     }
 
+    .logo {
+      width: 100%;
+      position: absolute;
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: 48px;
+    }
+
     /*CTA BTN*/
     .btn-container {
       width: 300px;
@@ -119,7 +133,7 @@
       height: 100%;
     }
 
-    .frame--end {
+    .frame--one {
       opacity: 0;
       z-index: 5;
     }
@@ -143,10 +157,6 @@
       top: 0px;
     }
 
-    .js-endframe-subheadline {
-      top: 200px;
-    }
-
     .js-headline-1 {
       top: 0px;
     }
@@ -156,41 +166,28 @@
       top: 0px;
     }
 
-    .endframe-hero {
+    .firstframe-man {
       height: auto;
-      top: 1px;
       position: absolute;
+      top: 110px;
       left: 0;
+      z-index: 1;
     }
 
-    .logobar {
-      width: 100%;
-      height: 45px;
-      border-top: 4px solid #fcc427;
-      border-bottom: 4px solid #fcc427;
-      position: absolute;
-      top: 300px;
-      background-color: #fff;
-    }
-
-    .logobar-logo {
-      width: 85px;
-      height: auto;
-      position: absolute;
-      top: 2px;
-      left: 8px;
-    }
-
-    .bms-logo {
-      width: 100px;
-      height: auto;
+    .firstframe-wheelspin {
+      width: 275px;
+      height: 201px;
       position: relative;
-      top: 0;
-      left: 0;
+      top: 110px;
+      left:8px;
+      z-index: 9999;
+      margin: 0 auto;
     }
+
+    
 
     #footer {
-      background-color: #1f7489;
+      background-color: #ffffff;
       height: 23px;
       width: 300px;
       z-index: 5566;
@@ -253,6 +250,7 @@
       bottom: 0px;
       left: 0;
       right: 0;
+      border-top: 5px solid #f4f4f4;
 
     }
 
@@ -369,14 +367,18 @@
   </script>
 
 <body>
-  <div id="container" class="container b-300x600" style="background-color: #1f7489;">
+  <div id="container" class="container b-300x600" style="background-color: #ffffff;">
     <div class="banner-border"></div>
     <a class="exit js-exit" href="javascript:void(window.open(window.clickTag))"></a>
     <div class="banner-content">
-      <div class="frame frame--end js-endframe">
-        <img class="endframe-hero" src="./images/endframe-bg.jpg" alt="">
-        <img class="headline js-endframe-headline" src="./images/F4-H.png" alt="">
-        <img class="headline js-endframe-headline-2" src="./images/F5-H.png" alt="">
+      <div class="logo">
+        <img src="./images/Logo.png" alt="Adcetris">
+      </div>
+      <div class="frame frame--one js-firstframe">
+        <img class="firstframe-man" src="./images/man.png" alt="">
+        <img class="firstframe-wheelspin" src="./images/wheelspin.gif" alt="">
+        <img class="headline js-firstframe-headline" src="./images/F4-H.png" alt="">
+        <img class="headline js-firstframe-headline-2" src="./images/F5-H.png" alt="">
 
 
         <!-- ISI  -->

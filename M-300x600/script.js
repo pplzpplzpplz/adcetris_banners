@@ -27,17 +27,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
   // list all animating elements
-  // var julie = document.querySelector(".julie");
+
   var ctaBtn = document.querySelector(".cta-btn");
-  // var yellowWave = document.querySelector(".js-wave-yellow");
-  // var blueWave = document.querySelector(".js-wave-blue");
-  // var h1 = document.querySelector(".js-headline-1");
-  // var h2 = document.querySelector(".js-headline-2");
-  // var h3 = document.querySelector(".js-headline-3");
-  // var f1 = document.querySelector(".js-frame-1");
-  var f2 = document.querySelector(".js-endframe");
-  var efh = document.querySelector(".js-endframe-headline");
-  var efh2 = document.querySelector(".js-endframe-headline-2");
+  var f2 = document.querySelector(".js-firstframe");
+  var efh = document.querySelector(".js-firstframe-headline");
+  var efh2 = document.querySelector(".js-firstframe-headline-2");
   var exit = document.querySelector(".js-exit");
 
   // timelines
@@ -50,15 +44,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     bannerTL = new TimelineMax({ paused: false });
 
     bannerTL
-    // .to(julie, 0.5, { opacity: 1, ease: Expo.in }, "+=0")
-    // .to(yellowWave, 1, { y: -52, ease: Expo.out }, "+=0.5")
-    // .to(blueWave, 1, { y: -63, ease: Expo.out }, "-=1")
-    // .to(h1, 1, { y: 0, opacity: 1, ease: Expo.out }, "+=.5")
-    // .to(h2, 1, { y: 0, opacity: 1, ease: Expo.out }, "+=.2")
-    // .to([h1, h2], 1, { y: -10, opacity: 0, ease: Expo.out }, "+=2")
-    // .to(h3, 1, { y: 0, opacity: 1, ease: Expo.out }, "+=.2")
-    // .to(h3, 1, { y: -10, opacity: 0, ease: Expo.out }, "+=2")
-    // .to(f1, 1, { opacity: 0, ease: Expo.out }, "+=0")
     .to(f2, 1, { opacity: 1, ease: Expo.out }, "-=1")
     .to(efh, 0, { y: 0, opacity: 1, ease: Expo.out }, "-=1")
     .to(exit, 0, { y: -300,}, "-=1")
@@ -96,7 +81,11 @@ document.addEventListener("DOMContentLoaded", function (e) {
       "./images/F5-H.png",
       "./images/endframe-bg.jpg",
       "./images/rev-logo.jpg",
-      "./images/bms-logo.png"
+      "./images/bms-logo.png",
+      "./images/Logo.png",  // mine start here
+      "./images/man.jpg",
+      "./images/wheelspin.gif"
+
     ];
 
     for (var i = 0; i < images.length; i++) {
