@@ -93,7 +93,7 @@
       position: absolute;
       width: 298px;
       height: 598px;
-      border: 1px solid #535353;
+      border: 1px solid #d1dce1;
       pointer-events: none;
       z-index: 6;
       top: 0px;
@@ -133,35 +133,6 @@
       opacity: 0;
     }
 
-    .wave {
-      width: 300px;
-      height: auto;
-      bottom: 0;
-      position: absolute;
-    }
-
-    .wave--yellow {
-      width: 300;
-      position: absolute;
-      /* bottom: -183px; */
-      height: auto;
-      transform: translateY(183px);
-      right: 0;
-      top: 232px;
-    }
-
-    .wave--blue {
-      position: absolute;
-      width: 823px;
-      height: 692px;
-      background-color: #222D6E;
-      background: linear-gradient(0deg, #222D6E 0%, #222D6E 19%, #0185ac 100%);
-      border-radius: 100%;
-      bottom: -540px;
-      left: -310px;
-      transform: rotate(10deg) translateY(13%);
-    }
-
     .headline {
       width: 100%;
       height: auto;
@@ -174,10 +145,6 @@
 
     .js-endframe-subheadline {
       top: 200px;
-    }
-
-    .js-endframe-headline {
-      /* top: -85px; */
     }
 
     .js-headline-1 {
@@ -279,12 +246,11 @@
     /* ////////////////// SCROLLER STYLES ///////////////////////  */
 
     #scroll_container {
-
       background: #fff;
       z-index: 300;
       opacity: 1;
       position: absolute;
-      bottom: 24px;
+      bottom: 0px;
       left: 0;
       right: 0;
 
@@ -311,10 +277,10 @@
     .ssb_sb {
       cursor: pointer;
       position: absolute;
-      right: 7px;
-      min-height: 12px;
-      background: #1f7489;
-      border-radius: 50px;
+      right: 1px;
+      max-height: 10px;
+      background: #818285;
+      /* border-radius: 50px; */
       width: 6px !important;
     }
 
@@ -322,12 +288,12 @@
 
     .ssb_st {
       /* guia de cursor */
-      background: #dfe0e1;
+      background: #f4f4f4;
       cursor: pointer;
       height: 94%;
       position: absolute;
       width: 6px !important;
-      right: 7px;
+      right: 1px;
       top: 0px;
       border-radius: 50px;
     }
@@ -401,34 +367,17 @@
   </style>
   <script src="script.js" type="text/javascript" charset="utf-8">
   </script>
-  <!-- test -->
 
 <body>
   <div id="container" class="container b-300x600" style="background-color: #1f7489;">
     <div class="banner-border"></div>
     <a class="exit js-exit" href="javascript:void(window.open(window.clickTag))"></a>
     <div class="banner-content">
-      <div class="frame js-frame-1">
-        <!-- shapes -->
-        <img class="wave wave--yellow js-wave-yellow" src="./images/wave-yellow.png" alt="">
-        <span class="wave wave--blue js-wave-blue"></span>
-
-        <!-- julie -->
-        <img class="julie" src="./images/julie.png" alt="Julie">
-
-        <!-- frame headlines -->
-        <img class="headline js-headline-1" src="./images/F1-H.png" alt="">
-        <img class="headline js-headline-2" src="./images/F2-H.png" alt="">
-        <img class="headline js-headline-3" src="./images/F3-H.png" alt="">
-      </div>
       <div class="frame frame--end js-endframe">
         <img class="endframe-hero" src="./images/endframe-bg.jpg" alt="">
         <img class="headline js-endframe-headline" src="./images/F4-H.png" alt="">
         <img class="headline js-endframe-headline-2" src="./images/F5-H.png" alt="">
-        <div class="logobar">
-          <a href="javascript:void(window.open(window.clickTag4))"><img class="logobar-logo" src="./images/rev-logo.jpg"
-              alt=""></a>
-        </div>
+
 
         <!-- ISI  -->
         <div id="scroll_container" class="positionAb transis1">
