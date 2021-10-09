@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
   var loadedImage = 0;
   var images = [];
   var exit = document.querySelector(".exit");
-  // var legalExit = document.querySelector(".legal-exit");
   var bannerContent = document.querySelector(".banner-content");
 
   var bannerConfig = {
@@ -50,10 +49,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
 
 
     bannerTL = new TimelineMax({ paused: false });
-    // setTimeout(function () {
-    //   bannerTL.pause();
-    //   console.log("pausing");
-    // }, 15000)
 
     bannerTL
     .to(julie, 0.5, { opacity: 1, ease: Expo.in }, "+=0")
