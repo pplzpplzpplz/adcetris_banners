@@ -1,0 +1,159 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgray;
+}
+
+* {
+  padding: 0;
+  font-size: 9px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 298px;
+  height: 598px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #d1dce1;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 458px;
+}
+
+.top .logo {
+  padding-top: 20px;
+  width: 150px;
+  height: 48px;
+}
+
+.top .man {
+  z-index: 99;
+  position: absolute;
+  padding-top: 94px;
+  opacity: 0;
+}
+
+.top .hl1 {
+  width: 265px;
+  height: 45px;
+  position: absolute;
+  top: 117px;
+  opacity: 0;
+  z-index: 0;
+}
+
+.top .hl2 {
+  width: 279px;
+  height: 51px;
+  padding-top: 310px;
+  opacity: 0;
+}
+
+.top .hl3 {
+  width: 269px;
+  height: 120px;
+  position: absolute;
+  top: 320px;
+  opacity: 0;
+}
+
+.top .hl4 {
+  width: 275px;
+  height: 148px;
+  position: absolute;
+  top: 300px;
+  opacity: 0;
+}
+
+.top .cta {
+  opacity: 0;
+  position: absolute;
+  top: 361px;
+  z-index: 99;
+}
+
+.bottom {
+  width: 268px;
+  height: 137px;
+  padding-left: 12px;
+  padding-right: 20px;
+  border-top: 5px solid #e0e0e0;
+  overflow-y: scroll;
+}
+
+.bottom p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.bottom h3 {
+  font-size: 9px;
+  line-height: 11px;
+  color: #006983;
+  margin-top: 14px;
+}
+
+.bottom h4 {
+  margin-top: 14px;
+}
+
+.bottom ul {
+  list-style-image: url("images/bull.png");
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+}
+
+.bottom ul li {
+  margin-bottom: 6px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #818285;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f72;
+}
+/*# sourceMappingURL=styles.css.map */
