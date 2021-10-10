@@ -4,17 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // variables
 const bottomDiv = document.querySelector('.bottom');
-var scrollIncrement = 0;
 
 // ******* AUTO-SCROLL ********
 setTimeout(function autoScroll() {
-  var myVar = setInterval(scrollTo, 200);
+  var myVar = setInterval(scrollByFunc, 150);
 
   // slowly scroll ISI
-  function scrollTo() {
-    scrollIncrement= scrollIncrement + 2;
-    bottomDiv.scrollTo({
-      top: scrollIncrement,
+  function scrollByFunc() {
+    bottomDiv.scrollBy({
+      top: 1,
       behavior: 'smooth'
     });
   }
@@ -27,7 +25,7 @@ setTimeout(function autoScroll() {
 
   // if mouse is out of ISI, start scrolling again
   bottomDiv.addEventListener('mouseout', function () {
-    myVar = setInterval(scrollTo, 200);
+    myVar = setInterval(scrollByFunc, 300);
     console.log('mouse is out of bottom div')
   });
 
