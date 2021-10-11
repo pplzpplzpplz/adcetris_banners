@@ -1,4 +1,0 @@
-AuthType Basic  
-AuthName "restricted area"  
-AuthUserFile /M-300x600/.htpasswd  
-require valid-user
