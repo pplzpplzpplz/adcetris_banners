@@ -58,7 +58,7 @@ var tl = gsap.timeline();
     duration: 1.5,
     opacity: 1,
     ease: "power2.inOut",
-    y: 200
+    y: 194
   });
 
 // hl2 fade in
@@ -107,8 +107,8 @@ var tl = gsap.timeline();
   tl.to(".man", {
     duration: 1.25,
     scale: 1.25,
-    // paddingTop: 105,
-    transformOrigin: "top center",
+    paddingTop: 105,
+    // transformOrigin: "top center",
     ease: "power3.inOut"
   });
 
