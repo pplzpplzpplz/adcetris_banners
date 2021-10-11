@@ -2,8 +2,18 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-// variables
+// VARIABLES
 const bottomDiv = document.querySelector('.bottom');
+
+// DEBUG CONTROLS
+const pauseButton = document.querySelector('.pause');
+const restartButton = document.querySelector('.restart');
+const playButton = document.querySelector('.play');
+pauseButton.addEventListener('click', () => {tl.pause();});
+restartButton.addEventListener('click', () => {tl.restart();});
+playButton.addEventListener('click', () => {tl.play();});
+
+
 
 // ******* AUTO-SCROLL ********
 setTimeout(function autoScroll() {
@@ -32,93 +42,81 @@ setTimeout(function autoScroll() {
 }, 2000);
 
 
+// ***** GSAP *****
 
-
-
-
-
-console.log(bottomDiv.scrollHeight); // 1206
+var tl = gsap.timeline();
 
 // man fade in 
-  gsap.to(".man", {
+  tl.to(".man", {
     duration: 1.25,
     opacity: 1,
     ease: "power3.inOut"
   });
 
-// man enlarge
-gsap.to(".man", {
-  duration: 1.25,
-  delay: 16,
-  scale: 1.25,
-  paddingTop: 105,
-  ease: "power3.inOut"
-});
-
-
 // hl1 drop down + fade in
-  gsap.to(".hl1", {
+  tl.to(".hl1", {
     duration: 1.5,
-    delay: 1,
     opacity: 1,
     ease: "power2.inOut",
     y: 200
   });
 
 // hl2 fade in
-  gsap.to(".hl2", {
+  tl.to(".hl2", {
     duration: 1.75,
-    delay: 1,
     opacity: 1,
     ease: "power3.inOut"
-  });
+  }, "-=1");
 
 // hl 1 + 2 fade OUT
-  gsap.to(".hl12", {
+  tl.to(".hl12", {
     duration: 1.75,
-    delay: 4,
     opacity: 0,
     ease: "power3.inOut"
-  });
+  }, "+=2");
 
   // hl3 fade in
-  gsap.to(".hl3", {
+  tl.to(".hl3", {
     duration: 2,
-    delay: 5,
     opacity: 1,
     ease: "power3.inOut"
   });
 
   // hl3 fade out
-  gsap.to(".hl3", {
-    duration: 2,
-    delay: 9,
+  tl.to(".hl3", {
+    duration: 1.75,
     opacity: 0,
     ease: "power3.inOut"
-  });
+  }, "+=3");
 
   // hl4 fade in
-  gsap.to(".hl4", {
-    duration: 2.5,
-    delay: 10,
+  tl.to(".hl4", {
+    duration: 2,
     opacity: 1,
     ease: "power3.inOut"
   });
 
   // hl4 fade out
-  gsap.to(".hl4", {
+  tl.to(".hl4", {
     duration: 2,
-    delay: 14,
     opacity: 0,
+    ease: "power3.inOut"
+  }, "+=3");
+
+  // man enlarge
+  tl.to(".man", {
+    duration: 1.25,
+    scale: 1.25,
+    // paddingTop: 105,
+    transformOrigin: "top center",
     ease: "power3.inOut"
   });
 
   // cta fade in
-  gsap.to(".cta", {
-    duration: 2.25,
-    delay: 16,
+  tl.to(".cta", {
+    duration: 1.5,
     opacity: 1,
     ease: "power3.inOut"
-  });
+  }, "-=1.25");
 
 });
