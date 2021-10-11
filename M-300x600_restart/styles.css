@@ -119,11 +119,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .bottom {
   width: 268px;
-  height: 137px;
+  height: 121px;
   padding-left: 12px;
   padding-right: 20px;
+  padding-bottom: 16px;
   border-top: 5px solid #f4f4f4;
   overflow-y: scroll;
+}
+
+.bottom .torq {
+  color: #006983;
 }
 
 .bottom p {
