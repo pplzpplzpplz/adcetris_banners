@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 // VARIABLES
+const ctaButton = document.querySelector('.cta');
 const bottomDiv = document.querySelector('.bottom');
 
 // DEBUG CONTROLS
@@ -14,10 +15,18 @@ restartButton.addEventListener('click', () => {tl.restart();});
 playButton.addEventListener('click', () => {tl.play();});
 
 
+// LINK 
+ctaButton.addEventListener('mouseover', () => {
+  ctaButton.style.cursor = 'pointer';
+});
+ctaButton.addEventListener('click', () => {
+    window.open('https://www.adcetrispro.com/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/', '_blank');
+});
+
 
 // ******* AUTO-SCROLL ********
 setTimeout(function autoScroll() {
-  var myVar = setInterval(scrollByFunc, 150);
+  var myVar = setInterval(scrollByFunc, 75);
 
   // slowly scroll ISI
   function scrollByFunc() {
@@ -35,7 +44,7 @@ setTimeout(function autoScroll() {
 
   // if mouse is out of ISI, start scrolling again
   bottomDiv.addEventListener('mouseout', function () {
-    myVar = setInterval(scrollByFunc, 300);
+    myVar = setInterval(scrollByFunc, 75);
     console.log('mouse is out of bottom div')
   });
 
@@ -52,6 +61,15 @@ var tl = gsap.timeline();
     opacity: 1,
     ease: "power3.inOut"
   });
+
+// dial rotate -- not in timeline
+  gsap.to(".dial", {
+    duration: 8,
+    rotate: 360,
+    ease: "none",
+    repeat: -1, // -1 means infinite
+    transformOrigin: "center center",
+  }, "-= 1.25")
 
 // hl1 drop down + fade in
   tl.to(".hl1", {
@@ -104,13 +122,23 @@ var tl = gsap.timeline();
   }, "+=3");
 
   // man enlarge
-  tl.to(".man", {
+  tl.to(".manImg", {
     duration: 1.25,
     scale: 1.25,
-    paddingTop: 105,
-    // transformOrigin: "top center",
+    // paddingTop: 105,
+    transformOrigin: "top center",
     ease: "power3.inOut"
   });
+
+  // dial enlarge
+  tl.to(".dial", {
+    duration: 1.25,
+    scale: 1.25,
+    top: 124,
+    // paddingTop: 105,
+    // transformOrigin: "center center",
+    ease: "power3.inOut"
+  }, "-=1.25");
 
   // cta fade in
   tl.to(".cta", {
