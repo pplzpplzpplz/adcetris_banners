@@ -16,12 +16,14 @@ playButton.addEventListener('click', () => {tl.play();});
 
 
 // LINK 
-ctaButton.addEventListener('mouseover', () => {
-  ctaButton.style.cursor = 'pointer';
-});
-ctaButton.addEventListener('click', () => {
-    window.open('https://www.adcetrispro.com/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/', '_blank');
-});
+function showLink() {
+  ctaButton.addEventListener('mouseover', () => {
+    ctaButton.style.cursor = 'pointer';
+  });
+  ctaButton.addEventListener('click', () => {
+      window.open('https://www.adcetrispro.com/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/', '_blank');
+  });
+}
 
 
 // ******* AUTO-SCROLL ********
@@ -54,6 +56,7 @@ setTimeout(function autoScroll() {
 // ***** GSAP *****
 
 var tl = gsap.timeline();
+// tl.timeScale(2);
 
 // man fade in 
   tl.to(".man", {
@@ -144,7 +147,8 @@ var tl = gsap.timeline();
   tl.to(".cta", {
     duration: 1.5,
     opacity: 1,
-    ease: "power3.inOut"
+    ease: "power3.inOut",
+    onComplete: showLink
   }, "-=1.25");
 
 });
