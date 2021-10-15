@@ -56,7 +56,7 @@ setTimeout(function autoScroll() {
 // ***** GSAP *****
 
 var tl = gsap.timeline();
-// tl.timeScale(2);
+// tl.timeScale(2.5);
 
 // man fade in 
   tl.to(".man", {
