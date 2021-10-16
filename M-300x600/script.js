@@ -3,7 +3,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
 // VARIABLES
-const ctaButton = document.querySelector('.cta');
+// const ctaButton = document.querySelector('.cta');
+const topDiv = document.querySelector('.top');
 const bottomDiv = document.querySelector('.bottom');
 
 // DEBUG CONTROLS
@@ -16,14 +17,12 @@ playButton.addEventListener('click', () => {tl.play();});
 
 
 // LINK 
-function showLink() {
-  ctaButton.addEventListener('mouseover', () => {
-    ctaButton.style.cursor = 'pointer';
-  });
-  ctaButton.addEventListener('click', () => {
-      window.open('https://www.adcetrispro.com/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/', '_blank');
-  });
-}
+topDiv.addEventListener('mouseover', () => {
+  topDiv.style.cursor = 'pointer';
+});
+topDiv.addEventListener('click', () => {
+    window.open('https://www.adcetrispro.com/previously-untreated-stage-III-IV-classical-hodgkin-lymphoma/', '_blank');
+});
 
 
 // ******* AUTO-SCROLL ********
@@ -55,7 +54,9 @@ setTimeout(function autoScroll() {
 
 // ***** GSAP *****
 
-var tl = gsap.timeline();
+var tl = gsap.timeline({
+  repeat: -1
+});
 // tl.timeScale(2.5);
 
 // man fade in 
@@ -147,8 +148,15 @@ var tl = gsap.timeline();
   tl.to(".cta", {
     duration: 1.5,
     opacity: 1,
-    ease: "power3.inOut",
-    onComplete: showLink
+    ease: "power3.inOut"
   }, "-=1.25");
+
+  // cta, man dial fade out
+  tl.to([".cta", ".manImg", ".dial"], {
+    duration: .5,
+    opacity: 0,
+    ease: "power3.inOut"
+  }, "+=3");
+
 
 });
