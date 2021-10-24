@@ -204,7 +204,7 @@ h6 {
 }
 
 .top .hl4 .bullet2 {
-  margin-top: 3px;
+  margin-top: 0px;
 }
 
 .top .hl4 .topul {
@@ -238,7 +238,7 @@ h6 {
 
 .bottom {
   width: 268px;
-  height: 52px;
+  height: 68px;
   padding-left: 12px;
   padding-right: 20px;
   padding-bottom: 16px;

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ******* AUTO-SCROLL ********
     setTimeout(function autoScroll() {
+      // if scroll reaches the bottom of the page, scroll back to the top
       var myVar = setInterval(scrollByFunc, 75);
 
       // slowly scroll ISI
@@ -142,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1.5,
       opacity: 1,
       ease: "power3.inOut"
-    },"+=3");
+    }, "+=3");
 
   }, false);
 
