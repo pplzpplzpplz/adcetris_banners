@@ -136,12 +136,12 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1,
       opacity: 1,
       ease: "power3.inOut"
-    });
+    }, "-=1");
 
     // cta + logo + man fade out
     tl.to([".slide4", ".man"], {
       duration: 1.5,
-      opacity: 1,
+      opacity: 0,
       ease: "power3.inOut"
     }, "+=3");
 
