@@ -1,0 +1,260 @@
+// variables
+$clr-torq: #006983;
+
+.debug {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px;
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgray;
+}
+
+* {
+  padding: 0;
+  font-size: 9px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 318px;
+  height: 478px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d1dce1;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 359px;
+
+  .logo {
+    width: 147px;
+    height: 47px;
+    padding-top: 10px;
+  }
+
+  .topul {
+    margin-top: 9px;
+    margin-right: 0;
+    color: #333333;
+
+    li {
+      font-size: 9px;
+      line-height: 11px;
+      color: #333333;
+
+      span {
+        position: relative;
+        left: -5px;
+      }
+    }
+  }
+
+  .man {
+    z-index: 99;
+    position: absolute;
+    padding-top: 68px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+
+    .manImg {
+      width: 221px;
+      height: 163px;
+    }
+  }
+
+  .dial {
+    z-index: 991;
+    width: 138px;
+    height: 140px;
+    position: absolute;
+    top: 72px;
+  }
+
+  .hl12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hl1 {
+    width: 265px;
+    height: 45px;
+    position: absolute;
+    top: 200px;
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .hl2 {
+    width: 294px;
+    height: 28px;
+    padding-top: 240px;
+    opacity: 0;
+  }
+
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+  }
+
+  .hl3 {
+    width: 318px;
+    height: auto;
+    position: absolute;
+    top: 230px;
+    left: 14px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .hltop3 {
+      width: 261px;
+      height: 33px;
+    }
+
+    .topul {
+      padding-left: 12px;
+      margin-top: 5px;
+    }
+
+  }
+
+  .hl4 {
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: 223px;
+    left: 14px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .hltop4 {
+      width: 291px;
+      height: 30px;
+    }
+
+    .topul {
+      padding-left: 13px;
+      margin-top: 5px;
+    }
+
+    .bullet2 {
+      margin-top: 3px;
+    }
+  }
+
+  .cta {
+    opacity: 0;
+    position: absolute;
+    width: 124px;
+    height: 31px;
+    top: 280px;
+    z-index: 99;
+  }
+}
+
+.bottom {
+  width: 286px;
+  height: 121px;
+  padding-left: 12px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  border-top: 5px solid #f4f4f4;
+  overflow-y: scroll;
+
+  .torq {
+    color: $clr-torq;
+  }
+
+  p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  h3 {
+    font-size: 9px;
+    line-height: 11px;
+    color: $clr-torq;
+    margin-top: 14px;
+  }
+
+  h4 {
+    margin-top: 14px;
+  }
+
+  ul {
+    list-style-image: url('images/bull.png');
+    margin: 0;
+    padding: 0;
+    margin-left: 14px;
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+
+// CUSTOM SCROLLBAR
+// not supported in Firefox or in Edge, prior version 79.
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #818285;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f72;
+}
