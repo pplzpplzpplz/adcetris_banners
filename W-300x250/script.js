@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ******* AUTO-SCROLL ********
     setTimeout(function autoScroll() {
+      // if scroll reaches the bottom of the page, scroll back to the top
       var myVar = setInterval(scrollByFunc, 75);
 
       // slowly scroll ISI
@@ -72,14 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "none",
       repeat: -1, // -1 means infinite
       transformOrigin: "center center",
-    }, "-= 1.25")
+    })
 
-    // hl1 drop down + fade in
+    // hl1 fade in
     tl.to(".hl1", {
       duration: 1.5,
       opacity: 1,
       ease: "power2.inOut",
-      y: 30
     });
 
     // hl2 fade in
@@ -89,12 +89,12 @@ document.addEventListener("DOMContentLoaded", function () {
       ease: "power3.inOut"
     }, "-=1");
 
-    // hl 1 + 2 fade OUT
-    tl.to(".hl12", {
+    // slide1 fade OUT
+    tl.to([".man", ".hl12"], {
       duration: 1.75,
       opacity: 0,
       ease: "power3.inOut"
-    }, "+=2");
+    });
 
     // hl3 fade in
     tl.to(".hl3", {
@@ -122,37 +122,25 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 2,
       opacity: 0,
       ease: "power3.inOut"
-    }, "+=3");
+    });
 
-    // man enlarge
-    tl.to(".manImg", {
+    // man fade in 
+    tl.to(".man", {
       duration: 1.25,
-      scale: 1.25,
-      // paddingTop: 105,
-      transformOrigin: "top center",
+      opacity: 1,
       ease: "power3.inOut"
     });
 
-    // dial enlarge
-    tl.to(".dial", {
-      duration: 1.25,
-      scale: 1.25,
-      top: 92,
-      // paddingTop: 105,
-      // transformOrigin: "center center",
-      ease: "power3.inOut"
-    }, "-=1.25");
-
-    // cta fade in
-    tl.to(".cta", {
-      duration: 1.5,
+    // cta + logo fade in
+    tl.to(".slide4", {
+      duration: 1,
       opacity: 1,
       ease: "power3.inOut"
-    }, "-=1.25");
+    }, "-=1");
 
-    // cta, man dial fade out
-    tl.to([".cta", ".manImg", ".dial"], {
-      duration: .5,
+    // cta + logo + man fade out
+    tl.to([".slide4", ".man"], {
+      duration: 1.5,
       opacity: 0,
       ease: "power3.inOut"
     }, "+=3");

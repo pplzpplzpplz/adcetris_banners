@@ -1,0 +1,300 @@
+.debug {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.debug button {
+  padding: 5px;
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgray;
+}
+
+* {
+  padding: 0;
+  font-size: 9px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 298px;
+  height: 248px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #d1dce1;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 164px;
+}
+
+.top .slide1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.top .slide1 .man {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .slide1 .man .manImg {
+  position: absolute;
+  left: -15px;
+  top: 24px;
+  width: 159px;
+  height: 112px;
+}
+
+.top .slide1 .man .dial {
+  z-index: 991;
+  width: 97px;
+  height: 98px;
+  position: absolute;
+  top: 26px;
+  left: 16px;
+}
+
+.top .slide1 .hl12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  width: 160px;
+}
+
+.top .slide1 .hl12 .hl1 {
+  width: 148.5px;
+  height: 59px;
+  position: absolute;
+  top: 28px;
+  left: 128px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.top .slide1 .hl12 .hl2 {
+  width: 165px;
+  height: 38.5px;
+  position: absolute;
+  top: 97px;
+  left: 128px;
+  opacity: 0;
+}
+
+.top sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.top .hl3 {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  opacity: 0;
+}
+
+.top .hl3 .hltop3 {
+  width: 242.5px;
+  height: 33px;
+}
+
+.top .topul {
+  position: absolute;
+  left: 15px;
+  margin-top: 6px;
+  margin-right: 0;
+  color: #333333;
+}
+
+.top .topul li {
+  font-size: 10px;
+  line-height: 11px;
+  color: #333333;
+  padding-top: 5px;
+}
+
+.top .topul li span {
+  position: relative;
+  left: -5px;
+}
+
+.top .hl4 {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  opacity: 0;
+}
+
+.top .hl4 .hltop4 {
+  width: 259px;
+  height: 49px;
+}
+
+.top .hl4 .bullet2 {
+  margin-top: 0px;
+}
+
+.top .hl4 .topul {
+  margin-top: 2px;
+}
+
+.top .hl4 .topul li {
+  padding-top: 3px;
+}
+
+.top .slide4 {
+  opacity: 0;
+}
+
+.top .cta {
+  position: absolute;
+  width: 119px;
+  height: 28px;
+  left: 158px;
+  top: 98px;
+  z-index: 99;
+}
+
+.top .logo {
+  position: absolute;
+  top: 39px;
+  left: 143px;
+  width: 138px;
+  height: 45px;
+}
+
+.bottom {
+  width: 268px;
+  height: 68px;
+  padding-left: 12px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  border-top: 5px solid #f4f4f4;
+  overflow-y: scroll;
+}
+
+.bottom .torq {
+  color: #006983;
+}
+
+.bottom p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.bottom h3 {
+  font-size: 9px;
+  line-height: 11px;
+  color: #006983;
+  margin-top: 14px;
+}
+
+.bottom h4 {
+  margin-top: 14px;
+}
+
+.bottom ul {
+  list-style-image: url("images/bull.png");
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+}
+
+.bottom ul li {
+  margin-bottom: 6px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #818285;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f72;
+}
+/*# sourceMappingURL=styles.css.map */
