@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1.75,
       opacity: 0,
       ease: "power3.inOut"
-    });
+    },"=+2");
 
     // hl3 fade in
     tl.to(".hl3", {
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1.75,
       opacity: 0,
       ease: "power3.inOut"
-    }, "+=3");
+    }, "+=6");
 
     // hl4 fade in
     tl.to(".hl4", {
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 2,
       opacity: 0,
       ease: "power3.inOut"
-    });
+    }, "+=6");
 
     // man fade in 
     tl.to(".man", {
