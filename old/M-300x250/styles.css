@@ -24,10 +24,7 @@ body {
 }
 
 img {
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 * {
@@ -138,29 +135,21 @@ h6 {
 
 .top .slide1 .hl12 .hl1 {
   width: 148.5px;
-  height: 60px;
+  height: 59px;
   position: absolute;
   top: 28px;
   left: 128px;
   z-index: 0;
   opacity: 0;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .slide1 .hl12 .hl2 {
-  width: 166px;
-  height: 39px;
+  width: 165px;
+  height: 38.5px;
   position: absolute;
   top: 97px;
   left: 128px;
   opacity: 0;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top sup {
@@ -181,12 +170,8 @@ h6 {
 }
 
 .top .hl3 .hltop3 {
-  width: 243px;
+  width: 242.5px;
   height: 33px;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .topul {
@@ -221,10 +206,6 @@ h6 {
 .top .hl4 .hltop4 {
   width: 259px;
   height: 49px;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .hl4 .bullet2 {
@@ -250,10 +231,6 @@ h6 {
   left: 158px;
   top: 98px;
   z-index: 99;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .logo {
@@ -262,10 +239,6 @@ h6 {
   left: 143px;
   width: 138px;
   height: 45px;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
-  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .bottom {
