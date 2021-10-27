@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: darkgray;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 * {
@@ -74,6 +75,10 @@ h6 {
   width: 147px;
   height: 47px;
   padding-top: 10px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .topul {
@@ -142,6 +147,10 @@ h6 {
   top: 200px;
   opacity: 0;
   z-index: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .hl2 {
@@ -149,6 +158,10 @@ h6 {
   height: 28px;
   padding-top: 230px;
   opacity: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top sup {
@@ -184,6 +197,10 @@ h6 {
 .top .hl3 .hltop3 {
   width: 261px;
   height: 33px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .hl3 .topul {
@@ -216,6 +233,10 @@ h6 {
 .top .hl4 .hltop4 {
   width: 291px;
   height: 30px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .top .hl4 .topul {
@@ -234,6 +255,10 @@ h6 {
   height: 31px;
   top: 280px;
   z-index: 99;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
 .bottom {
