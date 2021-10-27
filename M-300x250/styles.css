@@ -195,6 +195,7 @@ h6 {
   margin-top: 6px;
   margin-right: 0;
   color: #333333;
+  width: 100%;
 }
 
 .top .topul li {
@@ -207,6 +208,13 @@ h6 {
 .top .topul li span {
   position: relative;
   left: -5px;
+}
+
+@-moz-document url-prefix() {
+  .top .topul li span {
+    position: relative;
+    left: 0px;
+  }
 }
 
 .top .hl4 {
@@ -241,6 +249,8 @@ h6 {
 
 .top .slide4 {
   opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .top .cta {
@@ -304,6 +314,12 @@ h6 {
   margin: 0;
   padding: 0;
   margin-left: 14px;
+}
+
+@-moz-document url-prefix() {
+  .bottom ul li {
+    margin-left: -4px;
+  }
 }
 
 .bottom ul li {

@@ -60,12 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var tl = gsap.timeline({
       repeat: -1
     });
-    // tl.timeScale(2.5);
+    tl.timeScale(2.5);
 
     // man fade in 
     tl.to(".man", {
       duration: 1.25,
       opacity: 1,
+      rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 8,
       rotate: 360,
       ease: "none",
+      rotation:0.01,
       repeat: -1, // -1 means infinite
       transformOrigin: "center center",
     })
@@ -82,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl1", {
       duration: 1.5,
       opacity: 1,
+      rotation:0.01,
       ease: "power2.inOut",
     });
 
@@ -89,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl2", {
       duration: 1.75,
       opacity: 1,
+      rotation:0.01,
       ease: "power3.inOut"
     }, "-=1");
 
@@ -96,6 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to([".man", ".hl12"], {
       duration: 1.75,
       opacity: 0,
+      rotation:0.01,
       ease: "power3.inOut"
     },"=+2");
 
@@ -103,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl3", {
       duration: 2,
       opacity: 1,
+      rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -110,6 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl3", {
       duration: 1.75,
       opacity: 0,
+      rotation:0.01,
       ease: "power3.inOut"
     }, "+=6");
 
@@ -117,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl4", {
       duration: 2,
       opacity: 1,
+      rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -124,6 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl4", {
       duration: 2,
       opacity: 0,
+      rotation:0.01,
       ease: "power3.inOut"
     }, "+=6");
 
@@ -131,11 +140,13 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".man", {
       duration: 1.25,
       opacity: 1,
+      rotation:0.01,
       ease: "power3.inOut"
     });
 
     // cta + logo fade in
     tl.to(".slide4", {
+      rotation:0.01,
       duration: 1,
       opacity: 1,
       ease: "power3.inOut"
@@ -143,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // cta + logo + man fade out
     tl.to([".slide4", ".man"], {
+      rotation:0.01,
       duration: 1.5,
       opacity: 0,
       ease: "power3.inOut"
