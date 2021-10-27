@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ***** GSAP *****
 
+    gsap.config({
+      force3D: false
+    });
+    
     var tl = gsap.timeline({
       repeat: -1
     });
