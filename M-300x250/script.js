@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var tl = gsap.timeline({
       repeat: -1
     });
-    // tl.timeScale(2.5);
+    tl.timeScale(2.5);
 
     // man fade in 
     tl.to(".man", {
