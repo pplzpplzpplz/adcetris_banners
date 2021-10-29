@@ -54,19 +54,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // ***** GSAP *****
 
-    gsap.config({
-      force3D: false
-    });
+    // gsap.config({
+    //   force3D: false
+    // });
     var tl = gsap.timeline({
       repeat: -1
     });
-    // tl.timeScale(2.5);
+    tl.timeScale(2.5);
 
     // man fade in 
     tl.to(".man", {
       duration: 1.25,
       opacity: 1,
-      rotation:0.01,
+      force3D: true,
+      // rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 8,
       rotate: 360,
       ease: "none",
+      force3D: true,
       repeat: -1, // -1 means infinite
       transformOrigin: "center center",
     })
@@ -83,7 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl1", {
       duration: 1.5,
       opacity: 1,
-      rotation:0.01,
+      force3D: true,
+      // rotation:0.01,
       ease: "power2.inOut",
     });
 
@@ -92,6 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
       duration: 1.75,
       opacity: 1,
       rotation:0.01,
+      scale: 1,
+      force3D: true,
+      z: 0,
       ease: "power3.inOut"
     }, "-=1");
 
@@ -99,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to([".man", ".hl12"], {
       duration: 1.75,
       opacity: 0,
+      force3D: true,
       // rotation:0.01,
       ease: "power3.inOut"
     },"=+2");
@@ -107,7 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl3", {
       duration: 2,
       opacity: 1,
-      rotation:0.01,
+      force3D: true,
+      // rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -115,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl3", {
       duration: 1.75,
       opacity: 0,
+      force3D: true,
       ease: "power3.inOut"
     }, "+=6");
 
@@ -122,7 +131,8 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl4", {
       duration: 2,
       opacity: 1,
-      rotation:0.01,
+      force3D: true,
+      // rotation:0.01,
       ease: "power3.inOut"
     });
 
@@ -130,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl4", {
       duration: 2,
       opacity: 0,
+      force3D: true,
       ease: "power3.inOut"
     }, "+=6");
 
@@ -137,13 +148,18 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".man", {
       duration: 1.25,
       opacity: 1,
+      force3D: true,
       ease: "power3.inOut"
     });
 
     // cta + logo fade in
     tl.to(".slide4", {
-      duration: 1,
+      duration: 1.25,
       opacity: 1,
+      scale: 1,
+      rotation: 0.01,
+      force3D: true,
+      z: 0,
       ease: "power3.inOut"
     }, "-=1");
 
@@ -151,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to([".slide4", ".man"], {
       duration: 1.5,
       opacity: 0,
+      force3D: true,
       ease: "power3.inOut"
     }, "+=3");
 
