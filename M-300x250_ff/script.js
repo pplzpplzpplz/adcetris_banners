@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to(".hl1", {
       duration: 1.5,
       opacity: 1,
-      force3D: true,
+      // force3D: true,
       // rotation:0.01,
       ease: "power2.inOut",
     });
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
       opacity: 1,
       rotation:0.01,
       scale: 1,
-      force3D: true,
+      // force3D: true,
       z: 0,
       ease: "power3.inOut"
     }, "-=1");
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to([".man", ".hl12"], {
       duration: 1.75,
       opacity: 0,
-      force3D: true,
+      // force3D: true,
       // rotation:0.01,
       ease: "power3.inOut"
     },"=+2");
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.to([".slide4", ".man"], {
       duration: 1.5,
       opacity: 0,
-      force3D: true,
+      // force3D: true,
       ease: "power3.inOut"
     }, "+=3");
 

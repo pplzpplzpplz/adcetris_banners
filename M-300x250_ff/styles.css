@@ -161,7 +161,6 @@ h6 {
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
-  will-change: transform;
 }
 
 .top sup {
