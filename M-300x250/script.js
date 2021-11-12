@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // hl2 fade in
-    tl.to(".hl2", {
+    tl.to([".hl2", ".hl2b"], {
       duration: 1.75,
       opacity: 1,
       rotation:0.01,
