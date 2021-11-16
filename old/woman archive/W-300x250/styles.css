@@ -132,10 +132,6 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   opacity: 1;
   width: 160px;
 }
@@ -155,8 +151,8 @@ h6 {
 }
 
 .top .slide1 .hl12 .hl2 {
-  width: 162px;
-  height: 34.5px;
+  width: 166px;
+  height: 39px;
   position: absolute;
   top: 97px;
   left: 128px;
@@ -165,22 +161,6 @@ h6 {
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
-}
-
-.top .slide1 .hl12 div {
-  width: 210px;
-  height: auto;
-  position: absolute;
-  text-align: center;
-  top: 138px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #666666;
-  font-size: 9px;
-  line-height: 9px;
-  opacity: 0;
-  z-index: 3;
 }
 
 .top sup {
@@ -201,7 +181,7 @@ h6 {
 }
 
 .top .hl3 .hltop3 {
-  width: 245.5px;
+  width: 243px;
   height: 33px;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
@@ -215,7 +195,6 @@ h6 {
   margin-top: 6px;
   margin-right: 0;
   color: #333333;
-  width: 100%;
 }
 
 .top .topul li {
@@ -228,13 +207,6 @@ h6 {
 .top .topul li span {
   position: relative;
   left: -5px;
-}
-
-@-moz-document url-prefix() {
-  .top .topul li span {
-    position: relative;
-    left: 0px;
-  }
 }
 
 .top .hl4 {
@@ -332,12 +304,6 @@ h6 {
   margin: 0;
   padding: 0;
   margin-left: 14px;
-}
-
-@-moz-document url-prefix() {
-  .bottom ul li {
-    margin-left: -4px;
-  }
 }
 
 .bottom ul li {
