@@ -111,7 +111,6 @@ h6 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
 
   .hl1 {
     width: 265px;
@@ -127,15 +126,32 @@ h6 {
   }
 
   .hl2 {
-    width: 279px;
-    height: 51px;
-    padding-top: 304px;
+    width: 272px;
+    height: 50.5px;
+    padding-top: 300px;
     opacity: 0;
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
     image-rendering: -webkit-optimize-contrast;
     -ms-interpolation-mode: nearest-neighbor;
   }
+
+  div {
+    width: 210px;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    top: 430px;
+    align-self: center;
+    color: #666666;
+    // left: 20px;
+    font-size: 9px;
+    line-height: 9px;
+    opacity: 0;
+    z-index: 3;
+  }
+
+}
 
   sup {
     font-size: 75%;
@@ -180,7 +196,7 @@ h6 {
     justify-content: center;
 
     .hltop4 {
-      width: 259.5px;
+      width: 258.5px;
       height: 48.5px;
       image-rendering: -moz-crisp-edges;
       image-rendering: -o-crisp-edges;
