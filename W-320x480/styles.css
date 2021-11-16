@@ -1,0 +1,341 @@
+.debug {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  padding: 5px;
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgray;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+* {
+  padding: 0;
+  font-size: 9px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 318px;
+  height: 478px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #d1dce1;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 359px;
+}
+
+.top .logo {
+  width: 147px;
+  height: 47px;
+  padding-top: 10px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.top .topul {
+  margin-top: 9px;
+  margin-right: 0;
+  color: #333333;
+}
+
+.top .topul li {
+  font-size: 9px;
+  line-height: 11px;
+  color: #333333;
+}
+
+.top .topul li span {
+  position: relative;
+  left: -5px;
+}
+
+.top .man {
+  z-index: 99;
+  position: absolute;
+  padding-top: 68px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .man .manImg {
+  width: 221px;
+  height: 163px;
+}
+
+.top .dial {
+  z-index: 991;
+  width: 138px;
+  height: 140px;
+  position: absolute;
+  top: 72px;
+}
+
+.top .hl12 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .hl12 .hl1 {
+  width: 265px;
+  height: 45px;
+  position: absolute;
+  top: 200px;
+  opacity: 0;
+  z-index: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.top .hl12 .hl2 {
+  width: 293px;
+  height: 25px;
+  padding-top: 228px;
+  opacity: 0;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.top .hl12 div {
+  width: 210px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  top: 318px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #666666;
+  font-size: 9px;
+  line-height: 9px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.top sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.top .hl3 {
+  width: 318px;
+  height: auto;
+  position: absolute;
+  top: 230px;
+  left: 14px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .hl3 .hltop3 {
+  width: 260.5px;
+  height: 33px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.top .hl3 .topul {
+  padding-left: 12px;
+  margin-top: 5px;
+}
+
+.top .hl4 {
+  width: 320px;
+  height: auto;
+  position: absolute;
+  top: 223px;
+  left: 14px;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .hl4 .hltop4 {
+  width: 290px;
+  height: 29px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.top .hl4 .topul {
+  padding-left: 13px;
+  margin-top: 5px;
+}
+
+.top .hl4 .bullet2 {
+  margin-top: 3px;
+}
+
+.top .cta {
+  opacity: 0;
+  position: absolute;
+  width: 124px;
+  height: 31px;
+  top: 280px;
+  z-index: 99;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+.bottom {
+  width: 286px;
+  height: 121px;
+  padding-left: 12px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  border-top: 5px solid #f4f4f4;
+  overflow-y: scroll;
+}
+
+.bottom .torq {
+  color: #006983;
+}
+
+.bottom p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.bottom h3 {
+  font-size: 9px;
+  line-height: 11px;
+  color: #006983;
+  margin-top: 14px;
+}
+
+.bottom h4 {
+  margin-top: 14px;
+}
+
+.bottom ul {
+  list-style-image: url("images/bull.png");
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+}
+
+.bottom ul li {
+  margin-bottom: 6px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #818285;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f72;
+}
+/*# sourceMappingURL=styles.css.map */
