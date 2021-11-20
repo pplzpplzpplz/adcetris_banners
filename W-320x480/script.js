@@ -8,13 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const topDiv = document.querySelector('.top');
     const bottomDiv = document.querySelector('.bottom');
 
-    // DEBUG CONTROLS
-    const pauseButton = document.querySelector('.pause');
-    const restartButton = document.querySelector('.restart');
-    const playButton = document.querySelector('.play');
-    pauseButton.addEventListener('click', () => { tl.pause(); });
-    restartButton.addEventListener('click', () => { tl.restart(); });
-    playButton.addEventListener('click', () => { tl.play(); });
 
     // LINK 
     topDiv.addEventListener('mouseover', () => {
@@ -39,13 +32,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // if mouse is over ISI, stop scrolling
       bottomDiv.addEventListener('mouseover', function () {
         clearInterval(myVar);
-        console.log('mouse is over bottom div')
       });
 
       // if mouse is out of ISI, start scrolling again
       bottomDiv.addEventListener('mouseout', function () {
         myVar = setInterval(scrollByFunc, 75);
-        console.log('mouse is out of bottom div')
       });
 
     }, 2000);
