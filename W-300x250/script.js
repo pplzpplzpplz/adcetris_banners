@@ -40,14 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // if mouse is over ISI, stop scrolling
       bottomDiv.addEventListener('mouseover', function () {
         clearInterval(myVar);
-        console.log('mouse is over bottom div')
-      });
+        });
 
       // if mouse is out of ISI, start scrolling again
       bottomDiv.addEventListener('mouseout', function () {
         myVar = setInterval(scrollByFunc, 75);
-        console.log('mouse is out of bottom div')
-      });
+        });
 
     }, 2000);
 
